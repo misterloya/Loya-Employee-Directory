@@ -6,7 +6,7 @@ export default function Table(props) {
             <BootstrapTable striped bordered hover>
                 <thead>
                     <tr>
-                        <th>#</th>
+                        <th>Photo </th>
                         <th>First Name</th>
                         <th>Last Name</th>
                         <th>Username</th>
@@ -16,7 +16,7 @@ export default function Table(props) {
                 <tbody>
                     {props.employees.map(employee => (
                     <tr>
-                        <td>1</td>
+                        <td><img src={employee.picture.thumbnail} alt={employee.name.first}></img></td>
                         <td>{employee.name.first}</td>
                         <td>{employee.name.last}</td>
                         <td>{employee.login.username}</td>

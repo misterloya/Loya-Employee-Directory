@@ -42,7 +42,7 @@ render(){
       <NavBar  />
       <Header /> */}
       <Search search = {this.state.search} handleInputChange={this.handleInputChange} />
-      <BootstrapTable employees = {this.state.employees.filter(employee => this.state.search === employee.name.last)}  />
+      <BootstrapTable employees = {this.state.employees.filter(employee => employee.name.last.toLowerCase().includes (this.state.search.toLowerCase()))}  />
 
  
 

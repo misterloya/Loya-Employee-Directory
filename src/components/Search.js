@@ -12,7 +12,7 @@ export default function Search(props) {
                 name="search"
                 type="text"
                 className="form-control"
-                placeholder="Search for a Gif"
+                placeholder="Search for Employee by Last Name"
                 id="search"
                 />
             </div>
